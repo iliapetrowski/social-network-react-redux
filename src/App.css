@@ -1,0 +1,20 @@
+
+.grid{
+  display: grid;
+  grid-template-rows: 20vh 100vh;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+          "header header"
+          "navbar content";
+  grid-gap: 5px;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.appBackground{
+
+  background-image: radial-gradient(circle, #071c41, #102142, #182642, #1f2b43, #263043, #243140, #25323d, #26323a, #222e33, #1f2a2c, #1d2526, #1b2120);
+
+}
