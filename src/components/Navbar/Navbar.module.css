@@ -1,49 +1,14 @@
-.navbar {
-    grid-area: navbar;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: auto;
-
-
+.nav {
+    grid-area: n;
+    background-color: burlywood;
+    padding: 20px;
 }
 
-.navButtons {
-    display: grid;
-    justify-items: stretch;
-    border: 2px solid #4A4453;
-    -webkit-box-shadow: -1px 3px 34px -7px rgba(37, 250, 172, 0.63);
-    -moz-box-shadow: -1px 3px 34px -7px rgba(37, 250, 172, 0.63);
-    box-shadow: -1px 3px 34px -7px rgba(37, 250, 172, 0.63);
-
-}
-
-.navButtons.ButtonActive {
-    background-color: #0b1624;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-
-
-}
-
-.Button {
-    background-color: #00b6b0;
-    border: 1px solid #656585;
+.item a {
     color: white;
-    padding: 15px 15px;
-    text-align: center;
     text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    width: 150px;
-    display: block;
 }
 
-.Button:hover {
-    background-color: #0b1624;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
-.Button:active {
-    position: relative;
-    top: 1px;
+.item a.activeLink {
+    color: gold;
 }

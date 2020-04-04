@@ -1,23 +1,17 @@
-import profileReducer from "./profile_reducer";
-import dialogsReducer from "./dialogs_reducer";
-import sidebarReducer from "./sidebar_reducer";
-
-const ADD_POST = 'ADD-POST';
-const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
-const UPDATE_NEW_MESSAGE_BODY = 'UPDATE-NEW-MESSAGE-BODY';
-const SEND_MESSAGE = 'SEND-MESSAGE';
-
+import profileReducer from "./profile-reducer";
+import dialogsReducer from "./dialogs-reducer";
+import sidebarReducer from "./sidebar-reducer";
 
 let store = {
     _state: {
         profilePage: {
             posts: [
                 {id: 1, message: 'Hi, how are you?', likesCount: 12},
-                {id: 2, message: 'It\'classes my first post', likesCount: 11},
+                {id: 2, message: 'It\'s my first post', likesCount: 11},
                 {id: 3, message: 'Blabla', likesCount: 11},
                 {id: 4, message: 'Dada', likesCount: 11}
             ],
-            newPostText: 'Privetik!'
+            newPostText: 'it-kamasutra.com'
         },
         dialogsPage: {
             dialogs: [
@@ -29,35 +23,38 @@ let store = {
                 {id: 6, name: 'Valera'}
             ],
             messages: [
-                {id: 1, message: 'Hi, how are u?'},
+                {id: 1, message: 'Hi'},
                 {id: 2, message: 'How is your it-kamasutra?'},
-                {id: 3, message: 'Yo!privet, kak delishki? privet, kak delishki?'},
-                {id: 4, message: 'Yo privet, kak delishki?'},
-                {id: 5, message: 'Yo, privet, kak delishki?'}
+                {id: 3, message: 'Yo'},
+                {id: 4, message: 'Yo'},
+                {id: 5, message: 'Yo'}
             ],
-            newMessageBody: ''
+            newMessageBody: ""
         },
         sidebar: {}
     },
+    _callSubscriber() {
+        console.log('State changed');
+    },
+
     getState() {
+        debugger;
         return this._state;
     },
     subscribe(observer) {
-        this._callSubscriber = observer;
+        this._callSubscriber = observer;  // observer
     },
-    _callSubscriber() {
-        console.log('State changed')
-    },
+
     dispatch(action) {
         this._state.profilePage = profileReducer(this._state.profilePage, action);
         this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
-        this._state.profilePage = sidebarReducer(this._state.profilePage, action);
+        this._state.sidebar = sidebarReducer(this._state.sidebar, action);
+
         this._callSubscriber(this._state);
-    }};
-
-
-
+    }
+}
 
 
 export default store;
-window.srore = store;
+window.store = store;
+// store - OOP

@@ -1,75 +1,22 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
-
 }
 
 .dialogsItems {
-    display: grid;
-    justify-items: stretch;
-
-
+    padding: 10px;
+    color: white;
 }
 
 .dialogsItems .active {
     color: gold;
-
 }
 
-
-.messagesBlock {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-
+.messages {
+    padding: 10px;
 }
 
-.message {
-    background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-    padding: 20px;
-    color: black;
-    margin: 20px;
-}
-
-textarea {
-    width: 70%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    resize: none;
-}
-
-
-.btn {
-
-    display: block;
-    margin: 5px auto;
-    padding: 0;
-    overflow: hidden;
-    border-width: 0;
-    outline: none;
-    border-radius: 2px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-
-    background-color: #2ecc71;
-    color: #ecf0f1;
-
-}
-
-.btn:hover, .btn:focus {
-    background-color: #27ae60;
-}
-
-.btn > * {
-    position: relative;
-}
-
-.btn span {
-    display: block;
-    padding: 12px 24px;
+.messages .message {
+    color: white;
 }
 
