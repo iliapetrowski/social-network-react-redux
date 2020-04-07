@@ -12,3 +12,12 @@ border-bottom: .2em solid #fff;
     width: 120px;
 }
 
+.loginBlock {
+    float: right;
+    color: red;
+
+}
+
+.loginBlock a {
+    color: red;
+}
