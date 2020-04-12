@@ -15,9 +15,13 @@ border-bottom: .2em solid #fff;
 .loginBlock {
     float: right;
     color: red;
+    padding: 20px;
+    margin: 30px;
 
 }
 
 .loginBlock a {
     color: red;
+    padding: 20px;
+    margin: 30px;
 }
