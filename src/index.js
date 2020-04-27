@@ -6,7 +6,7 @@ import './index.css';
 import App from './App';
 import {BrowserRouter} from "react-router-dom";
 import {Provider} from "react-redux";
-import 'typeface-roboto';
+
 
 ReactDOM.render(
     <BrowserRouter>
@@ -14,7 +14,6 @@ ReactDOM.render(
             <App/>
         </Provider>
     </BrowserRouter>, document.getElementById('root'));
-
 
 // API
 // If you want your app to work offline and load faster, you can change
