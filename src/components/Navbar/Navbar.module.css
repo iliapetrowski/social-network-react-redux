@@ -1,14 +1,41 @@
 .nav {
+    display: grid;
     grid-area: n;
-    background-color: burlywood;
-    padding: 20px;
-}
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 1px solid #000000;
+    background-color: #e2e8f0;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px ;
+    grid-gap: 10px;
+    grid-row: auto;
+    justify-items: center;
+    align-items: center;
 
-.item a {
-    color: red;
+}
+s.item{
+    margin: 10px;
+    display: grid;
+    align-items: center;
+}
+a {
+    background-color: #050505;
+    box-shadow: 0 5px 0 darkred;
+    color: white;
+    /*padding: 1em 1.5em;*/
+    /*margin: 20px;*/
+    /*position: relative;*/
     text-decoration: none;
+    text-transform: uppercase;
 }
 
-.item a.activeLink {
-    color: gold;
+a:hover {
+    background-color: #575050;
+    cursor: pointer;
 }
+
+a:active {
+    box-shadow: none;
+    top: 5px;
+}
+
