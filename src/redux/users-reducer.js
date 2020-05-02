@@ -57,7 +57,7 @@ const usersReducer = (state = initialState, action) => {
                 ...state,
                 followingInProgress: action.isFetching
                     ? [...state.followingInProgress, action.userId]
-                    : state.followingInProgress.filter(id => id != action.userId)
+                    : state.followingInProgress.filter(id => id !== action.userId)
             }
         }
         default:
@@ -79,10 +79,11 @@ export const toggleFollowingProgress = (isFetching, userId) => ({
 })
 
 //делает асинхронную работу и внутри кучу диспатчей, получает юзеров, крутилка и тд
-export const getUsers = (currentPage, pageSize) => {
+export const requestUsers = (page, pageSize) => {
     return (dispatch) => {
         dispatch(toggleIsFetching(true))
-        usersAPI.getUsers(currentPage, pageSize).then(data => {
+        dispatch(setCurrentPage(page))
+        usersAPI.getUsers(page, pageSize).then(data => {
             dispatch(toggleIsFetching(false))
             dispatch(setUsers(data.items));
             dispatch(setUsersTotalCount(data.totalCount));
