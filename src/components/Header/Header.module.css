@@ -1,24 +1,15 @@
 .header {
     grid-area: h;
     border-bottom: 1px solid #000000;
-    background-color: #e2e8f0;
-}
-
-.header img {
-    width: 120px;
-}
-
-.loginBlock {
-    float: right;
-    color: red;
-    padding: 20px;
-    margin: 30px;
-    border: white;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
-.loginBlock a {
-    color: red;
-    padding: 20px;
-    margin: 30px;
+
+
+.loginBlock{
+    padding-right: 30px;
 }

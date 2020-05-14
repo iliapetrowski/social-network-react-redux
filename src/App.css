@@ -3,12 +3,12 @@
     margin: 0 auto;
     display: grid;
     max-width: 1200px;
-    height: 100vh;
+    height: 1fr;
     grid-template-areas: "h h" "n c";
     grid-row-gap: 10px;
     grid-column-gap: 10px;
-    grid-template-rows: 160px 1fr;
-    grid-template-columns: 20% 1fr;
+    grid-template-rows: 120px 1fr;
+    grid-template-columns: max-content 1fr;
 
 
 }

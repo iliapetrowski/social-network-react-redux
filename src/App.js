@@ -11,13 +11,15 @@ import {connect} from "react-redux";
 import {compose} from "redux";
 import {initializeApp} from "./redux/app-reducer";
 import Preloader from "./components/common/preloader/Preloader";
+import Start from "./components/Start/Start";
 
 class App extends React.Component {
     componentDidMount() {
         this.props.initializeApp()
     }
+
     render() {
-        if(!this.props.initialized) {
+        if (!this.props.initialized) {
             return <Preloader/>
         }
 
@@ -37,6 +39,9 @@ class App extends React.Component {
 
                     <Route path='/login'
                            render={() => <LoginPage/>}/>
+
+                    <Route exact path='/'
+                           render={() => <Start/>}/>
 
 
                 </div>

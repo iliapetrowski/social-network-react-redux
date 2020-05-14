@@ -1,27 +1,19 @@
 .nav {
     display: flex;
     grid-area: n;
-    border-right: 1px solid #000000;
-    background-color: #e2e8f0;
+    background-color: whitesmoke;
     flex-direction: column;
     align-items: center;
+    margin-right: 10px;
+    border-right: 1px black solid;
 
 }
-s.item{
-    display: grid;
-    align-items: center;
-}
-a {
-    color: black;
+
+.button__text {
     text-transform: uppercase;
-}
+    color: black;
+    text-decoration: none;
+    padding-right: 50px;
+    margin: 50px;
 
-a:hover {
-    cursor: pointer;
 }
-
-a:active {
-    box-shadow: none;
-    top: 5px;
-}
-
