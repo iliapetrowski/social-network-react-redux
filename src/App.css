@@ -1,6 +1,4 @@
 
-
-
 .app-wrapper {
     margin: 0 auto;
     display: grid;
@@ -10,17 +8,7 @@
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     grid-template-rows: 160px 1fr;
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: 20% 1fr;
 
 
 }
-
-.app-wrapper.content{
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border: 1px solid #000000;
-    background-color: #e2e8f0;
-}
-
-

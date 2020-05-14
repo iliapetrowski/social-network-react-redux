@@ -3,6 +3,10 @@ import React from "react";
 import styles from './Preloader.module..css'
 
 let Preloader = (props) => {
-    return <img src={preloader} className={styles.preloader}/>
+    return <div className="load">
+        <hr/><hr/><hr/><hr/>
+    </div>
+
+    // <img src={preloader} className={styles.preloader}/>
 };
 export default Preloader;

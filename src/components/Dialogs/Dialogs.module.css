@@ -1,12 +1,8 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
-    grid-auto-rows: min-content;
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
+
     border: 1px solid #000000;
-    background-color: #e2e8f0;
     height: 100vh;
 
 }

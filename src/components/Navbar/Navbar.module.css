@@ -1,36 +1,22 @@
 .nav {
-    display: grid;
+    display: flex;
     grid-area: n;
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border: 1px solid #000000;
+    border-right: 1px solid #000000;
     background-color: #e2e8f0;
-    grid-template-rows: 50px 50px 50px 50px 50px 50px ;
-    grid-gap: 10px;
-    grid-row: auto;
-    justify-items: center;
+    flex-direction: column;
     align-items: center;
 
 }
 s.item{
-    margin: 10px;
     display: grid;
     align-items: center;
 }
 a {
-    background-color: #050505;
-    box-shadow: 0 5px 0 darkred;
-    color: white;
-    /*padding: 1em 1.5em;*/
-    /*margin: 20px;*/
-    /*position: relative;*/
-    text-decoration: none;
+    color: black;
     text-transform: uppercase;
 }
 
 a:hover {
-    background-color: #575050;
     cursor: pointer;
 }
 
